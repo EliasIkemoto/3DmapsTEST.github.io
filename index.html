@@ -25,39 +25,47 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>&lt;script&gt;</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>window.addEventListener('DOMContentLoaded', init);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>function init() {</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const width = 306;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const height = 400;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const width = 1920;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const height = 1080;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const canvasElement = document.querySelector('#myCanvas');</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const renderer = new THREE.WebGLRenderer({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>canvas: canvasElement,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>renderer.setSize(width, height);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const scene = new THREE.Scene();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const camera = new THREE.PerspectiveCamera(35, 0.8, 0.885,1000000);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>camera.position.set(-500, 700, 1200);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const controls = new THREE.OrbitControls(camera, canvasElement);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>camera.lookAt(new THREE.Vector3(200, 0, 0));</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">     </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>const meshHz1 = new THREE.Mesh(new THREE.BoxGeometry(120, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshHz1);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>meshHz1.position.set(30.5, 0, 0 )</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshHz2 = new THREE.Mesh(new THREE.BoxGeometry(193, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));</span></p>
@@ -429,7 +437,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshbox1.position.set(280, -10, 390)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>group.add(meshbox1);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">       </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">       </span></span></p>
@@ -610,86 +619,106 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs1a.position.set(-94, -20, 105)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs1a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs2a = new THREE.Mesh(new THREE.BoxGeometry(20, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs2a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs2a.position.set(-94, -22.5, 110)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs2a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs3a = new THREE.Mesh(new THREE.BoxGeometry(20, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs3a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs3a.position.set(-94, -25, 115)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs3a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const meshStairs4a = new THREE.Mesh(new THREE.BoxGeometry(20, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs4a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs4a.position.set(-94, -27.5, 120)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs4a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs5a = new THREE.Mesh(new THREE.BoxGeometry(20, 20, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs5a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs5a.position.set(-94, -30, 125)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs5a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs6a = new THREE.Mesh(new THREE.BoxGeometry(20, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs6a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs6a.position.set(-94, -32.5, 130)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs6a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs7a = new THREE.Mesh(new THREE.BoxGeometry(20, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs7a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs7a.position.set(-94, -35, 135)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs7a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs8a = new THREE.Mesh(new THREE.BoxGeometry(20, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs8a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs8a.position.set(-94, -37.5, 140)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs8a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs11a = new THREE.Mesh(new THREE.BoxGeometry(20, 40, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs11a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs11a.position.set(-74, -20, 140)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs11a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs22a = new THREE.Mesh(new THREE.BoxGeometry(20, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs22a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs22a.position.set(-74, -22.5, 135)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs22a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs33a = new THREE.Mesh(new THREE.BoxGeometry(20, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs33a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs33a.position.set(-74, -25, 130)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs33a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs44a = new THREE.Mesh(new THREE.BoxGeometry(20, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs44a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
@@ -702,32 +731,40 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs55a.position.set(-74, -30, 120)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs55a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs66a = new THREE.Mesh(new THREE.BoxGeometry(20, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs66a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs66a.position.set(-74, -32.5, 115)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs66a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs77a = new THREE.Mesh(new THREE.BoxGeometry(20, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs77a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs77a.position.set(-74, -35, 110)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs77a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs88a = new THREE.Mesh(new THREE.BoxGeometry(20, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs88a);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs88a.position.set(-74, -37.5, 105)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs88a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs0a = new THREE.Mesh(new THREE.BoxGeometry(2, 50, 40), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs0a);</span></p>
@@ -735,7 +772,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs0a.position.set(-85, -15, 123)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">              </span></span></p>
 <p class="p1"><span class="s1">groupSt.add(meshStairs0a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const groupStb = new THREE.Group();</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(groupStb);</span></p>
@@ -743,62 +781,76 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>groupStb.rotation.y =- Math.PI /1.07;</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>groupStb.position.set(224, 0, 190)</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs11b = new THREE.Mesh(new THREE.BoxGeometry(20, 40, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs11b);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs11b.position.set(-74, -20, 140)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStb.add(meshStairs11b);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs22b = new THREE.Mesh(new THREE.BoxGeometry(20, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs22b);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs22b.position.set(-74, -22.5, 135)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStb.add(meshStairs22b);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs33b = new THREE.Mesh(new THREE.BoxGeometry(20, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs33b);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs33b.position.set(-74, -25, 130)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStb.add(meshStairs33b);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs44b = new THREE.Mesh(new THREE.BoxGeometry(20, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs44b);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs44b.position.set(-74, -27.5, 125)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1">groupStb.add(meshStairs44b);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs55b = new THREE.Mesh(new THREE.BoxGeometry(20, 20, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs55b);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs55b.position.set(-74, -30, 120)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStb.add(meshStairs55b);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs66b = new THREE.Mesh(new THREE.BoxGeometry(20, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs66b);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs66b.position.set(-74, -32.5, 115)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStb.add(meshStairs66b);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs77b = new THREE.Mesh(new THREE.BoxGeometry(20, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs77b);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs77b.position.set(-74, -35, 110)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStb.add(meshStairs77b);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs88b = new THREE.Mesh(new THREE.BoxGeometry(20, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs88b);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
@@ -820,64 +872,79 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs11c.position.set(-74, -20, 140)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStc.add(meshStairs11c);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs22c = new THREE.Mesh(new THREE.BoxGeometry(23, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs22c);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs22c.position.set(-74, -22.5, 135)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStc.add(meshStairs22c);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs33c = new THREE.Mesh(new THREE.BoxGeometry(23, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs33c);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs33c.position.set(-74, -25, 130)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStc.add(meshStairs33c);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs44c = new THREE.Mesh(new THREE.BoxGeometry(23, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs44c);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs44c.position.set(-74, -27.5, 125)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1">groupStc.add(meshStairs44c);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs55c = new THREE.Mesh(new THREE.BoxGeometry(23, 20, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs55c);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs55c.position.set(-74, -30, 120)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStc.add(meshStairs55c);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs66c = new THREE.Mesh(new THREE.BoxGeometry(23, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs66c);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs66c.position.set(-74, -32.5, 115)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStc.add(meshStairs66c);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs77c = new THREE.Mesh(new THREE.BoxGeometry(23, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs77c);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs77c.position.set(-74, -35, 110)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStc.add(meshStairs77c);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const meshStairs88c = new THREE.Mesh(new THREE.BoxGeometry(23, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>scene.add(meshStairs88c);</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>meshStairs88c.position.set(-74, -37.5, 105)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">                      </span></span></p>
 <p class="p1"><span class="s1">groupStc.add(meshStairs88c);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1">const loader = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader.load("https://unpkg.com/three@0.137.4/examples/fonts/helvetiker_regular.typeface.json", (font) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
@@ -894,7 +961,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>bevelSegments: 5,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text = new THREE.Mesh(textGeometry, textMaterial)</span></p>
@@ -909,14 +977,16 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scene.add(text)</span></p>
 <p class="p1"><span class="s1">})</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const loader1 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader1.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font1) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry1 = new THREE.TextGeometry("PC</span><span class="s2">演習</span><span class="s1">1", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font1,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>size: 20,</span></p>
@@ -929,7 +999,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>bevelSegments: 5,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry1.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial1 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text1 = new THREE.Mesh(textGeometry1, textMaterial1)</span></p>
@@ -946,13 +1017,15 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scene.add(text1)</span></p>
 <p class="p1"><span class="s1">})</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>const loader2 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader2.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font2) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry2 = new THREE.TextGeometry("PC</span><span class="s2">演習</span><span class="s1">2", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font2,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size:20,</span></p>
@@ -966,7 +1039,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry2.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial2 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text2 = new THREE.Mesh(textGeometry2, textMaterial2)</span></p>
@@ -988,7 +1062,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry3 = new THREE.TextGeometry("PC</span><span class="s2">演習</span><span class="s1">3", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font3,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 20,</span></p>
@@ -1002,7 +1077,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry3.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial3 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text3 = new THREE.Mesh(textGeometry3, textMaterial3)</span></p>
@@ -1024,7 +1100,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry4 = new THREE.TextGeometry("</span><span class="s2">サーバー室</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font4,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 12,</span></p>
@@ -1038,7 +1115,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry4.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial4 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text4 = new THREE.Mesh(textGeometry4, textMaterial4)</span></p>
@@ -1054,13 +1132,15 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scene.add(text4)</span></p>
 <p class="p1"><span class="s1">})</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader5 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader5.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font5) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry5 = new THREE.TextGeometry("</span><span class="s2">機材</span><span class="s1">\n</span><span class="s2">センター</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font5,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 15,</span></p>
@@ -1074,7 +1154,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry5.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial5 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text5 = new THREE.Mesh(textGeometry5, textMaterial5)</span></p>
@@ -1097,7 +1178,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry6 = new THREE.TextGeometry("</span><span class="s2">応接室</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font6,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 15,</span></p>
@@ -1111,7 +1193,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry6.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial6 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text6 = new THREE.Mesh(textGeometry6, textMaterial6)</span></p>
@@ -1122,7 +1205,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text6.rotation.x = 0</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text6.rotation.y = -1.35</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text6.rotation.z = 0</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scene.add(text6)</span></p>
 <p class="p1"><span class="s1">})</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
@@ -1132,7 +1216,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry7 = new THREE.TextGeometry("</span><span class="s2">証明書</span><span class="s1">\n</span><span class="s2">発行機</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font7,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 12,</span></p>
@@ -1146,7 +1231,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry7.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial7 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text7 = new THREE.Mesh(textGeometry7, textMaterial7)</span></p>
@@ -1157,7 +1243,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text7.rotation.x = 0</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text7.rotation.y = -2.95</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text7.rotation.z = 0</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scene.add(text7)</span></p>
 <p class="p1"><span class="s1">})</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
@@ -1168,7 +1255,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader9 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader9.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font9) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry9 = new THREE.TextGeometry("</span><span class="s2">管理課</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font9,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 12,</span></p>
@@ -1182,7 +1270,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry9.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial9 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text9 = new THREE.Mesh(textGeometry9, textMaterial9)</span></p>
@@ -1199,7 +1288,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const loader10 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader10.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font10) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry10 = new THREE.TextGeometry("</span><span class="s2">入試課</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font10,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 12,</span></p>
@@ -1213,7 +1303,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry10.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial10 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text10 = new THREE.Mesh(textGeometry10, textMaterial10)</span></p>
@@ -1231,7 +1322,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader11 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader11.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font11) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry11 = new THREE.TextGeometry("</span><span class="s2">教育研究課</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font11,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 12,</span></p>
@@ -1245,7 +1337,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry11.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial11 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text11 = new THREE.Mesh(textGeometry11, textMaterial11)</span></p>
@@ -1265,7 +1358,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader12 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader12.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font12) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry12 = new THREE.TextGeometry("</span><span class="s2">待合ロビー</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font12,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 10,</span></p>
@@ -1279,7 +1373,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry12.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial12 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text12 = new THREE.Mesh(textGeometry12, textMaterial12)</span></p>
@@ -1297,7 +1392,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader13 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader13.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry13 = new THREE.TextGeometry("</span><span class="s2">教務課</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 15,</span></p>
@@ -1311,7 +1407,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry13.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial13 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text13 = new THREE.Mesh(textGeometry13, textMaterial13)</span></p>
@@ -1329,7 +1426,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader13a = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader13a.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13a) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry13a = new THREE.TextGeometry("</span><span class="s2">学生課</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13a,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 15,</span></p>
@@ -1343,7 +1441,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry13a.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial13a = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text13a = new THREE.Mesh(textGeometry13a, textMaterial13a)</span></p>
@@ -1364,7 +1463,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>const loader14 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader14.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font14) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry14 = new THREE.TextGeometry("</span><span class="s2">就職支援課</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font14,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span></span><span class="s2">　</span><span class="s1">size: 15,</span></p>
@@ -1378,7 +1478,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry14.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial14 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text14 = new THREE.Mesh(textGeometry14, textMaterial14)</span></p>
@@ -1396,7 +1497,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader15 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader15.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font15) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry15 = new THREE.TextGeometry("</span><span class="s2">非常勤</span><span class="s1">\n</span><span class="s2">控室</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font15,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>size: 12,</span></p>
@@ -1410,7 +1512,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry15.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial15 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text15 = new THREE.Mesh(textGeometry15, textMaterial15)</span></p>
@@ -1428,7 +1531,8 @@
 <p class="p1"><span class="s1">const loader16 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader16.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font16) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry16 = new THREE.TextGeometry("</span><span class="s2">ゼミ室</span><span class="s1"> 1", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font16,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>size: 12,</span></p>
@@ -1442,7 +1546,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry16.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial16 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text16 = new THREE.Mesh(textGeometry16, textMaterial16)</span></p>
@@ -1456,12 +1561,15 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scene.add(text16)</span></p>
 <p class="p1"><span class="s1">})</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1">const loader17 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader17.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry17 = new THREE.TextGeometry("</span><span class="s2">ゼミ室</span><span class="s1"> 2", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>size: 12,</span></p>
@@ -1475,7 +1583,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry17.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial17 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text17 = new THREE.Mesh(textGeometry17, textMaterial17)</span></p>
@@ -1488,12 +1597,15 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scene.add(text17)</span></p>
 <p class="p1"><span class="s1">})</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1">const loader18 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader18.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry18 = new THREE.TextGeometry("</span><span class="s2">ゼミ室</span><span class="s1"> 7", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>size: 12,</span></p>
@@ -1507,7 +1619,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry18.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial18 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text18 = new THREE.Mesh(textGeometry18, textMaterial18)</span></p>
@@ -1520,12 +1633,15 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scene.add(text18)</span></p>
 <p class="p1"><span class="s1">})</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const loader19 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader19.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry19 = new THREE.TextGeometry("</span><span class="s2">ゼミ室</span><span class="s1"> 8", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>size: 12,</span></p>
@@ -1539,7 +1655,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry19.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial19 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text19 = new THREE.Mesh(textGeometry19, textMaterial19)</span></p>
@@ -1557,7 +1674,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">     </span>const loader20 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader20.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry20 = new THREE.TextGeometry("</span><span class="s2">ゼミ室</span><span class="s1"> 4", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>size: 12,</span></p>
@@ -1571,7 +1689,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry20.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial20 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text20 = new THREE.Mesh(textGeometry20, textMaterial20)</span></p>
@@ -1588,7 +1707,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader21 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader21.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry21 = new THREE.TextGeometry("</span><span class="s2">ゼミ室</span><span class="s1"> 5", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>size: 12,</span></p>
@@ -1602,7 +1722,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry21.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial21 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text21 = new THREE.Mesh(textGeometry21, textMaterial21)</span></p>
@@ -1619,7 +1740,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader22 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader22.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry22 = new THREE.TextGeometry("</span><span class="s2">ゼミ室</span><span class="s1"> 6", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>size: 12,</span></p>
@@ -1633,7 +1755,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry22.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial22 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text22 = new THREE.Mesh(textGeometry22, textMaterial22)</span></p>
@@ -1651,7 +1774,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const loader23 = new THREE.FontLoader()</span></p>
 <p class="p1"><span class="s1">loader23.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) =&gt; {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("font loaded")</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const textGeometry23 = new THREE.TextGeometry("</span><span class="s2">保健センター</span><span class="s1">", {</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font: font13,</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>size: 15,</span></p>
@@ -1665,7 +1789,8 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">         </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>textGeometry23.center()</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const textMaterial23 = new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xe0ffff })</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const text23 = new THREE.Mesh(textGeometry23, textMaterial23)</span></p>
@@ -1681,13 +1806,20 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const point1 = new</span></p>
 <p class="p1"><span class="s1">THREE.Mesh(new</span></p>
@@ -1695,26 +1827,32 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xdc143c }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>scene.add(point1);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>point1.position.set(60, 60, 97)</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const point2 = new</span></p>
 <p class="p1"><span class="s1">THREE.Mesh(new</span></p>
 <p class="p1"><span class="s1">THREE.ConeGeometry(10, -25, 10),</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0x4169e1 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>scene.add(point2);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>point2.position.set(140, 57, 33)</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const point3 = new</span></p>
 <p class="p1"><span class="s1">THREE.Mesh(new</span></p>
 <p class="p1"><span class="s1">THREE.BoxGeometry(15, 15, 12),</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0x008000 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>scene.add(point3);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>point3.position.set(140, 57, 62)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">       </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const point1a = new</span></p>
@@ -1723,7 +1861,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0xdc143c }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>scene.add(point1a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>point1a.position.set(60, 75, 97)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">       </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const point2a = new</span></p>
@@ -1732,7 +1871,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0x4169e1 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>scene.add(point2a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>point2a.position.set(140, 75, 33)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
@@ -1742,7 +1882,8 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>new THREE.MeshLambertMaterial({</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>color: 0x008000 }));</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>scene.add(point3a);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>point3a.position.set(143, 70, 62)</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
@@ -1780,11 +1921,13 @@
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>tick();</span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function tick() {</span></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">          </span></span></p>
-<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>renderer.render(scene, camera);</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>requestAnimationFrame(tick);</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
