@@ -1,0 +1,1508 @@
+<head>
+    <meta charset="utf-8" />
+    <script src="https://unpkg.com/three@0.137.4/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.137.4/examples/js/loaders/FontLoader.js"></script>
+    <script src="https://unpkg.com/three@0.137.4/examples/js/utils/GeometryUtils.js"></script>
+    <script src="https://unpkg.com/three@0.137.4/examples/js/geometries/TextGeometry.js"></script>
+    <script src="https://unpkg.com/three@0.137.4/examples/js/controls/OrbitControls.js"></script>
+     <script>
+      
+      window.addEventListener('DOMContentLoaded', init);
+
+      function init() {
+        
+        const width = 306;
+        const height = 400;
+
+        
+        const canvasElement = document.querySelector('#myCanvas');
+        const renderer = new THREE.WebGLRenderer({
+          canvas: canvasElement,
+        });
+        renderer.setSize(width, height);
+
+        
+        const scene = new THREE.Scene();
+
+        
+        const camera = new THREE.PerspectiveCamera(35, 0.8, 0.885,1000000);
+        
+        
+        camera.position.set(-500, 700, 1200);
+
+        
+        const controls = new THREE.OrbitControls(camera, canvasElement);
+
+       camera.lookAt(new THREE.Vector3(200, 0, 0));
+
+        
+     
+        
+         const meshHz1 = new THREE.Mesh(new THREE.BoxGeometry(193, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshHz1);
+
+     meshHz1.position.set(-6.1, 0, -25 )
+        
+        const meshHz2 = new THREE.Mesh(new THREE.BoxGeometry(193, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshHz2);
+        
+    meshHz2.position.set(-6.1, 0, 80)
+       
+        
+        
+        
+        
+        const meshVt3_G = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 305), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt3_G);
+        
+    meshVt3_G.position.set(-105, 0, 20)
+        
+        
+        
+        
+        
+        
+        const meshHz5 = new THREE.Mesh(new THREE.BoxGeometry(90, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz5);
+        
+    meshHz5.position.set(-62, 0, -130)
+        
+        
+        const meshHz6 = new THREE.Mesh(new THREE.BoxGeometry(107.5, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshHz6);
+        
+    meshHz6.position.set(36.7, 0, -130)
+        
+        const meshHz7 = new THREE.Mesh(new THREE.BoxGeometry(107.5, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshHz7);
+        
+    meshHz7.position.set(36.7, 0, -190)
+        
+        const meshHz8 = new THREE.Mesh(new THREE.BoxGeometry(107.5, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz8);
+        
+    meshHz8.position.set(36.7, 0, -250)
+        
+        const meshVt6 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 120), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt6);
+        
+    meshVt6.position.set(-19.5, 0, -192.5)
+        
+        
+        
+        
+        const group = new THREE.Group();
+        
+        scene.add(group);
+        
+        group.rotation.y =- Math.PI /1.07;
+        
+        group.position.set(365, 0, 500)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       const meshHz9 = new THREE.Mesh(new THREE.BoxGeometry(130, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshHz9);
+        
+    meshHz9.position.set(26.7, 0, 125) 
+        meshHz9.rotation.y =- Math.PI / 1.07 ;
+        
+        
+        const meshVt7 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 58), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt7);
+        
+    meshVt7.position.set(-39, 0, 111.5)
+        
+        const meshHz10 = new THREE.Mesh(new THREE.BoxGeometry(20, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz10);
+        
+    meshHz10.position.set(-51.5, 0, 85)
+        
+        
+        const meshVt8 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 65), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt8);
+        
+    meshVt8.position.set(-64, 0, 115)
+        
+        
+        const meshStairs1 = new THREE.Mesh(new THREE.BoxGeometry(20, 40, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs1);
+        
+    meshStairs1.position.set(-94, -20, 105)
+        
+        const meshStairs2 = new THREE.Mesh(new THREE.BoxGeometry(20, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs2);
+        
+    meshStairs2.position.set(-94, -22.5, 110)
+        
+        const meshStairs3 = new THREE.Mesh(new THREE.BoxGeometry(20, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs3);
+        
+    meshStairs3.position.set(-94, -25, 115)
+        
+        const meshStairs4 = new THREE.Mesh(new THREE.BoxGeometry(20, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs4);
+        
+    meshStairs4.position.set(-94, -27.5, 120)
+        
+        const meshStairs5 = new THREE.Mesh(new THREE.BoxGeometry(20, 20, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs5);
+        
+    meshStairs5.position.set(-94, -30, 125)
+        
+        const meshStairs6 = new THREE.Mesh(new THREE.BoxGeometry(20, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs6);
+        
+    meshStairs6.position.set(-94, -32.5, 130)
+        
+        const meshStairs7 = new THREE.Mesh(new THREE.BoxGeometry(20, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs7);
+        
+    meshStairs7.position.set(-94, -35, 135)
+        
+        const meshStairs8 = new THREE.Mesh(new THREE.BoxGeometry(20, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs8);
+        
+    meshStairs8.position.set(-94, -37.5, 140)
+        
+        const meshStairs11 = new THREE.Mesh(new THREE.BoxGeometry(20, 40, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs11);
+        
+    meshStairs11.position.set(-74, -20, 140)
+        
+        const meshStairs22 = new THREE.Mesh(new THREE.BoxGeometry(20, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs22);
+        
+    meshStairs22.position.set(-74, -22.5, 135)
+        
+        const meshStairs33 = new THREE.Mesh(new THREE.BoxGeometry(20, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs33);
+        
+    meshStairs33.position.set(-74, -25, 130)
+        
+        const meshStairs44 = new THREE.Mesh(new THREE.BoxGeometry(20, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs44);
+        
+    meshStairs44.position.set(-74, -27.5, 125)
+        
+        const meshStairs55 = new THREE.Mesh(new THREE.BoxGeometry(20, 20, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs55);
+        
+    meshStairs55.position.set(-74, -30, 120)
+        
+        const meshStairs66 = new THREE.Mesh(new THREE.BoxGeometry(20, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs66);
+        
+    meshStairs66.position.set(-74, -32.5, 115)
+        
+        const meshStairs77 = new THREE.Mesh(new THREE.BoxGeometry(20, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs77);
+        
+    meshStairs77.position.set(-74, -35, 110)
+        
+        const meshStairs88 = new THREE.Mesh(new THREE.BoxGeometry(20, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs88);
+        
+    meshStairs88.position.set(-74, -37.5, 105)
+        
+        
+        const meshStairs0 = new THREE.Mesh(new THREE.BoxGeometry(2, 50, 40), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs0);
+        
+    meshStairs0.position.set(-85, -15, 123)
+        
+        const meshHz11 = new THREE.Mesh(new THREE.BoxGeometry(90, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshHz11);
+        
+    meshHz11.position.set(170, 0, 95) 
+        meshHz11.rotation.y =- Math.PI / 1.07 ;
+        
+        const meshHz12 = new THREE.Mesh(new THREE.BoxGeometry(88, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshHz12);
+        
+    meshHz12.position.set(169.5, 0, 80)
+        
+        
+        
+        
+        
+        
+        const meshHz16 = new THREE.Mesh(new THREE.BoxGeometry(88, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz16);
+        
+    meshHz16.position.set(169.5, 0, -250)
+        
+        
+        
+        
+      
+        
+        
+        
+        const meshVt11 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 30), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt11);
+        
+    meshVt11.position.set(5, 0, -265)
+        
+        
+      const meshVt12 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 30), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt12);
+        
+    meshVt12.position.set(128, 0, -265)  
+        
+        const meshHz21 = new THREE.Mesh(new THREE.BoxGeometry(123, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz21);
+        
+    meshHz21.position.set(66, 0, -277.5)
+        
+        
+        const meshVt13 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 341), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt13);
+        
+    meshVt13.position.set(216, 0, -82)  
+        
+        const meshHz22 = new THREE.Mesh(new THREE.BoxGeometry(375, 140, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz22);
+        
+    meshHz22.position.set(-170.3, -30, 518.7) 
+         group.add(meshHz22);
+        
+        const meshHz22a = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 50), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz22a);
+        
+    meshHz22a.position.set(240.3, 0, 18.3) 
+         
+        const meshHz22b = new THREE.Mesh(new THREE.BoxGeometry(4.88, 80, 40), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz22b);
+        
+    meshHz22b.position.set(28.88, 0, 453.2) 
+         group.add(meshHz22b);
+        
+        const meshHz22c = new THREE.Mesh(new THREE.BoxGeometry(33, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz22c);
+        
+    meshHz22c.position.set(43, 0, 435.24) 
+         group.add(meshHz22c);
+        
+        
+        
+        const meshVt14 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 90), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt14);
+        
+    meshVt14.position.set(280, 0, 35)  
+        meshVt14.rotation.y =- Math.PI / 1.07 ;
+        
+        
+        const meshVt15 = new THREE.Mesh(new THREE.BoxGeometry(2, 60, 60), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt15);
+        
+    meshVt15.position.set(261, -10, 55)  
+        meshVt15.rotation.y =- Math.PI / 1.07 ;
+        
+        const meshVt16 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 180), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt16);
+        
+    meshVt16.position.set(294.3, 0, 79.4)  
+        meshVt16.rotation.y =- Math.PI / 1.07 ;
+        
+        
+        
+        
+        const meshVt19 = new THREE.Mesh(new THREE.BoxGeometry(5, 140, 180), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt19);
+        
+    meshVt19.position.set(625.6, -30, 9)  
+        meshVt19.rotation.y =- Math.PI / 1.07 ;
+        
+        
+        const meshVt20 = new THREE.Mesh(new THREE.BoxGeometry(5, 140, 90), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt20);
+        
+    meshVt20.position.set(643.9, -30, 141.5)  
+        
+        const meshVt21 = new THREE.Mesh(new THREE.BoxGeometry(5, 140, 60), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt21);
+        
+    meshVt21.position.set(-337.13, -30, 220.8)
+       group.add(meshVt21);
+        
+        
+        const meshVt22 = new THREE.Mesh(new THREE.BoxGeometry(5, 140, 110), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt22);
+        
+    meshVt22.position.set(604.5, -30, 198)
+        meshVt22.rotation.y =- Math.PI / 1.07 ;
+        
+        const meshHz23 = new THREE.Mesh(new THREE.BoxGeometry(45, 140, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz23);
+        
+    meshHz23.position.set(635, -30, 246.2)
+        meshHz23.rotation.y =- Math.PI / 1.07 ;
+        
+        const meshHz24 = new THREE.Mesh(new THREE.BoxGeometry(690, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz24);
+        
+    meshHz24.position.set(270, 0, 290)
+        meshHz24.rotation.y =- Math.PI / 1.07 ;
+        
+        
+        const meshVt23 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 75), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt23);
+        
+    meshVt23.position.set(-170, 0, 265)
+        group.add(meshVt23);
+        
+        
+     
+        
+        
+   
+         
+        
+        
+        
+       
+        
+        
+        
+        const meshVt26 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 170), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt26);
+        
+    meshVt26.position.set(235, 0, 312.5)
+        
+        group.add(meshVt26);
+        
+        
+        const meshVt27 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 75), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt27);
+        
+    meshVt27.position.set(-135, 0, 265)
+        
+        group.add(meshVt27);
+        
+       const meshVt28 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 75), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt28);
+        
+    meshVt28.position.set(-100, 0, 265)
+        
+        group.add(meshVt28);
+
+        
+        const meshVt29 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 75), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt29);
+        
+    meshVt29.position.set(-10, 0, 265)
+        
+        group.add(meshVt29);
+        
+        
+        
+        const meshVt30 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 170), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt30);
+        
+    meshVt30.position.set(30, 0, 312.5)
+        
+        group.add(meshVt30);
+        
+        const meshVt31 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 170), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt31);
+        
+    meshVt31.position.set(175, 0, 312.5)
+        
+        group.add(meshVt31);
+        
+       
+        
+        const meshHz26 = new THREE.Mesh(new THREE.BoxGeometry(60, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshHz26);
+        
+    meshHz26.position.set(205, 0, 315)
+        
+        group.add(meshHz26);
+        
+       
+        
+        const meshVt32 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 180), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt32);
+        
+    meshVt32.position.set(395, 0, 312.5)
+        
+        group.add(meshVt32);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        const meshHz28 = new THREE.Mesh(new THREE.BoxGeometry(75, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz28);
+        
+    meshHz28.position.set(360, 0, 404)
+        
+        group.add(meshHz28);
+        
+        
+        const meshHz29 = new THREE.Mesh(new THREE.BoxGeometry(70, 80, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz29);
+        
+    meshHz29.position.set(-68, 0, 170)
+      
+        const meshHz31 = new THREE.Mesh(new THREE.BoxGeometry(25, 140, 5), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshHz31);
+        
+    meshHz31.position.set(-310, -30, 270)
+        
+  group.add(meshHz31);
+        
+        const meshVt37 = new THREE.Mesh(new THREE.BoxGeometry(5, 140, 35), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshVt37);
+        
+    meshVt37.position.set(-323, -30, 285)
+        
+  group.add(meshVt37);
+        
+        
+        const groupSt = new THREE.Group();
+        
+        scene.add(groupSt);
+        
+        groupSt.rotation.y =- Math.PI /1.07;
+        
+        groupSt.position.set(570, -18.7, 350)
+        
+        
+        const meshStairs1a = new THREE.Mesh(new THREE.BoxGeometry(20, 40, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs1a);
+        
+    meshStairs1a.position.set(-94, -20, 105)
+        
+groupSt.add(meshStairs1a);
+
+        const meshStairs2a = new THREE.Mesh(new THREE.BoxGeometry(20, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs2a);
+        
+    meshStairs2a.position.set(-94, -22.5, 110)
+                
+groupSt.add(meshStairs2a);
+
+
+        const meshStairs3a = new THREE.Mesh(new THREE.BoxGeometry(20, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs3a);
+        
+    meshStairs3a.position.set(-94, -25, 115)
+                
+groupSt.add(meshStairs3a);
+
+          const meshStairs4a = new THREE.Mesh(new THREE.BoxGeometry(20, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs4a);
+        
+    meshStairs4a.position.set(-94, -27.5, 120)
+                      
+groupSt.add(meshStairs4a);
+
+
+        const meshStairs5a = new THREE.Mesh(new THREE.BoxGeometry(20, 20, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs5a);
+        
+    meshStairs5a.position.set(-94, -30, 125)
+                      
+groupSt.add(meshStairs5a);
+
+
+        const meshStairs6a = new THREE.Mesh(new THREE.BoxGeometry(20, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs6a);
+        
+    meshStairs6a.position.set(-94, -32.5, 130)
+                      
+groupSt.add(meshStairs6a);
+
+
+        const meshStairs7a = new THREE.Mesh(new THREE.BoxGeometry(20, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs7a);
+        
+    meshStairs7a.position.set(-94, -35, 135)
+                      
+groupSt.add(meshStairs7a);
+
+
+        const meshStairs8a = new THREE.Mesh(new THREE.BoxGeometry(20, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs8a);
+        
+    meshStairs8a.position.set(-94, -37.5, 140)
+                      
+groupSt.add(meshStairs8a);
+
+
+        
+
+
+        
+        const meshStairs0a = new THREE.Mesh(new THREE.BoxGeometry(2, 50, 40), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs0a);
+        
+    meshStairs0a.position.set(-85, -15, 123)
+              
+groupSt.add(meshStairs0a);
+
+        const groupStb = new THREE.Group();
+        
+        scene.add(groupStb);
+        
+        groupStb.rotation.y =- Math.PI /1.07;
+        
+        groupStb.position.set(224, 0, 190)
+
+        const meshStairs11b = new THREE.Mesh(new THREE.BoxGeometry(20, 40, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs11b);
+        
+    meshStairs11b.position.set(-74, -20, 140)
+                      
+groupStb.add(meshStairs11b);
+
+
+        const meshStairs22b = new THREE.Mesh(new THREE.BoxGeometry(20, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs22b);
+        
+    meshStairs22b.position.set(-74, -22.5, 135)
+                      
+groupStb.add(meshStairs22b);
+
+
+        const meshStairs33b = new THREE.Mesh(new THREE.BoxGeometry(20, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs33b);
+        
+    meshStairs33b.position.set(-74, -25, 130)
+                      
+groupStb.add(meshStairs33b);
+
+
+        const meshStairs44b = new THREE.Mesh(new THREE.BoxGeometry(20, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs44b);
+        
+    meshStairs44b.position.set(-74, -27.5, 125)
+        
+groupStb.add(meshStairs44b);
+
+        const meshStairs55b = new THREE.Mesh(new THREE.BoxGeometry(20, 20, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs55b);
+        
+    meshStairs55b.position.set(-74, -30, 120)
+                      
+groupStb.add(meshStairs55b);
+
+
+        const meshStairs66b = new THREE.Mesh(new THREE.BoxGeometry(20, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs66b);
+        
+    meshStairs66b.position.set(-74, -32.5, 115)
+                      
+groupStb.add(meshStairs66b);
+
+
+        const meshStairs77b = new THREE.Mesh(new THREE.BoxGeometry(20, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs77b);
+        
+    meshStairs77b.position.set(-74, -35, 110)
+                      
+groupStb.add(meshStairs77b);
+
+
+        const meshStairs88b = new THREE.Mesh(new THREE.BoxGeometry(20, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs88b);
+        
+    meshStairs88b.position.set(-74, -37.5, 105)
+                      
+groupStb.add(meshStairs88b);
+        
+        const groupStc = new THREE.Group();
+        
+        scene.add(groupStc);
+        
+        groupStc.rotation.y =- Math.PI /2;
+        
+ groupStc.position.set(170,0,-190)
+        
+        const meshStairs11c = new THREE.Mesh(new THREE.BoxGeometry(23, 40, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs11c);
+        
+    meshStairs11c.position.set(-74, -20, 140)
+                      
+groupStc.add(meshStairs11c);
+
+
+        const meshStairs22c = new THREE.Mesh(new THREE.BoxGeometry(23, 35, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs22c);
+        
+    meshStairs22c.position.set(-74, -22.5, 135)
+                      
+groupStc.add(meshStairs22c);
+
+
+        const meshStairs33c = new THREE.Mesh(new THREE.BoxGeometry(23, 30, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs33c);
+        
+    meshStairs33c.position.set(-74, -25, 130)
+                      
+groupStc.add(meshStairs33c);
+
+
+        const meshStairs44c = new THREE.Mesh(new THREE.BoxGeometry(23, 25, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs44c);
+        
+    meshStairs44c.position.set(-74, -27.5, 125)
+        
+groupStc.add(meshStairs44c);
+
+        const meshStairs55c = new THREE.Mesh(new THREE.BoxGeometry(23, 20, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs55c);
+        
+    meshStairs55c.position.set(-74, -30, 120)
+                      
+groupStc.add(meshStairs55c);
+
+
+        const meshStairs66c = new THREE.Mesh(new THREE.BoxGeometry(23, 15, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs66c);
+        
+    meshStairs66c.position.set(-74, -32.5, 115)
+                      
+groupStc.add(meshStairs66c);
+
+
+        const meshStairs77c = new THREE.Mesh(new THREE.BoxGeometry(23, 10, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs77c);
+        
+    meshStairs77c.position.set(-74, -35, 110)
+                      
+groupStc.add(meshStairs77c);
+
+
+        const meshStairs88c = new THREE.Mesh(new THREE.BoxGeometry(23, 5, 2), new THREE.MeshLambertMaterial({ color: 0x696969 }));
+        scene.add(meshStairs88c);
+        
+    meshStairs88c.position.set(-74, -37.5, 105)
+                      
+groupStc.add(meshStairs88c);
+
+        
+        const meshVt17 = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 180), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt17);
+        
+    meshVt17.position.set(-110, 0, 426.2)  
+        group.add(meshVt17);
+        
+        
+        const meshVt17a = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 70), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt17a);
+        
+    meshVt17a.position.set(-55, 0, 481.2)  
+        group.add(meshVt17a);
+        
+        const meshVt17b = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 50), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt17b);
+        
+    meshVt17b.position.set(-80, 0, 421.2)  
+        group.add(meshVt17b);
+        
+        const meshVt17c = new THREE.Mesh(new THREE.BoxGeometry(5, 80, 60), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt17c);
+        
+    meshVt17c.position.set(-55, 0, 366.2)  
+        group.add(meshVt17c);
+        
+        const meshVt17aa = new THREE.Mesh(new THREE.BoxGeometry(90, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt17aa);
+        
+    meshVt17aa.position.set(-63, 0, 445)  
+        group.add(meshVt17aa);
+        
+        const meshVt17ab = new THREE.Mesh(new THREE.BoxGeometry(55, 80, 5), new THREE.MeshLambertMaterial({ color: 0xd3d3d3 }));
+        scene.add(meshVt17ab);
+        
+    meshVt17ab.position.set(-80, 0, 395)  
+        group.add(meshVt17ab);
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        const loader = new THREE.FontLoader()
+loader.load("https://unpkg.com/three@0.137.4/examples/fonts/helvetiker_regular.typeface.json", (font) => {
+  console.log("font loaded")
+  
+  const textGeometry = new THREE.TextGeometry("01-B1", {
+    font: font,
+    size: 100,
+    height: 30,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.3,
+    bevelSize: 2,
+    bevelOffset: 0,
+    bevelSegments: 5,
+  })
+  textGeometry.center()
+
+  const textMaterial = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text = new THREE.Mesh(textGeometry, textMaterial)
+  text.castShadow = true
+  text.position.x = 100
+  text.position.y = 200
+  text.position.z = -350
+  text.rotation.x = 0
+  text.rotation.y = 0.2
+  text.rotation.z = 0
+  
+ 
+  scene.add(text)
+})
+
+        
+                const loader1 = new THREE.FontLoader()
+loader1.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font1) => {
+  console.log("font loaded")
+  
+        
+
+        const textGeometry1 = new THREE.TextGeometry("1B01", {
+    font: font1,
+    size: 30,
+    height: 10,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.3,
+    bevelSize: 2,
+    bevelOffset: 0,
+    bevelSegments: 5,
+  })
+  textGeometry1.center()
+
+  const textMaterial1 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text1 = new THREE.Mesh(textGeometry1, textMaterial1)
+  text1.castShadow = true
+  text1.position.x = 560
+  text1.position.y = 70
+  text1.position.z = 20
+  text1.rotation.x = 0
+  text1.rotation.y = -1.35
+  text1.rotation.z = 0
+  
+ 
+  
+  scene.add(text1)
+})
+        
+
+ const loader2 = new THREE.FontLoader()
+loader2.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font2) => {
+  console.log("font loaded")
+  
+        
+
+        const textGeometry2 = new THREE.TextGeometry("1B02", {
+    font: font2,
+   　size: 12,
+    height: 4,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.8,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry2.center()
+
+  const textMaterial2 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text2 = new THREE.Mesh(textGeometry2, textMaterial2)
+  text2.castShadow = true
+  text2.position.x = 350
+  text2.position.y = 65
+  text2.position.z = 10
+  text2.rotation.x = 0
+  text2.rotation.y = -1.35
+  text2.rotation.z = 0
+  
+ 
+  
+  scene.add(text2)
+})
+        
+        const loader3 = new THREE.FontLoader()
+loader3.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font3) => {
+  console.log("font loaded")
+  
+        
+
+        const textGeometry3 = new THREE.TextGeometry("教員控", {
+    font: font3,
+   　size: 12,
+    height: 4,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.5,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry3.center()
+
+  const textMaterial3 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text3 = new THREE.Mesh(textGeometry3, textMaterial3)
+  text3.castShadow = true
+  text3.position.x = 300
+  text3.position.y = 56
+  text3.position.z = 20
+  text3.rotation.x = 0
+  text3.rotation.y = -1.35
+  text3.rotation.z = 0
+  
+ 
+  
+  scene.add(text3)
+})
+        
+        const loader4 = new THREE.FontLoader()
+loader4.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font4) => {
+  console.log("font loaded")
+  
+        
+
+        const textGeometry4 = new THREE.TextGeometry("暗室", {
+    font: font4,
+   　size: 12,
+    height: 4,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.5,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry4.center()
+
+  const textMaterial4 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text4 = new THREE.Mesh(textGeometry4, textMaterial4)
+  text4.castShadow = true
+  text4.position.x = 370
+  text4.position.y = 75
+  text4.position.z = 70
+  text4.rotation.x = 0
+  text4.rotation.y = -1.35
+  text4.rotation.z = 0
+  
+ 
+  
+  scene.add(text4)
+})
+
+        const loader5 = new THREE.FontLoader()
+loader5.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font5) => {
+  console.log("font loaded")
+  
+        
+
+        const textGeometry5 = new THREE.TextGeometry("小スタジオ", {
+    font: font5,
+   　size: 12,
+    height: 4,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.8,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry5.center()
+
+  const textMaterial5 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text5 = new THREE.Mesh(textGeometry5, textMaterial5)
+  text5.castShadow = true
+  text5.position.x = 370
+  text5.position.y = 65
+  text5.position.z = 130
+  text5.rotation.x = 0
+  text5.rotation.y = -1.35
+  text5.rotation.z = 0
+  
+ 
+  
+  scene.add(text5)
+})
+        
+        
+         const loader6 = new THREE.FontLoader()
+loader6.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font6) => {
+  console.log("font loaded")
+  
+        
+
+        const textGeometry6 = new THREE.TextGeometry("倉庫", {
+    font: font6,
+   　size: 15,
+    height: 4,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.5,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry6.center()
+
+  const textMaterial6 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text6 = new THREE.Mesh(textGeometry6, textMaterial6)
+  text6.castShadow = true
+  text6.position.x = 535
+  text6.position.y = 75
+  text6.position.z = 200
+  text6.rotation.x = 0
+  text6.rotation.y = -1.35
+  text6.rotation.z = 0
+
+  scene.add(text6)
+})
+        
+        
+        const loader7 = new THREE.FontLoader()
+loader7.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font7) => {
+  console.log("font loaded")
+  
+        
+
+        const textGeometry7 = new THREE.TextGeometry("スチール\nスタジオ上部", {
+    font: font7,
+   　size: 12,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.8,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry7.center()
+
+  const textMaterial7 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text7 = new THREE.Mesh(textGeometry7, textMaterial7)
+  text7.castShadow = true
+  text7.position.x = 365
+  text7.position.y = 80
+  text7.position.z = 240
+  text7.rotation.x = 0
+  text7.rotation.y = -1.35
+  text7.rotation.z = 0
+
+  scene.add(text7)
+})
+        
+        
+        
+        
+        
+        const loader9 = new THREE.FontLoader()
+loader9.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font9) => {
+  console.log("font loaded")
+
+        const textGeometry9 = new THREE.TextGeometry("ビデオ\nスタジオ上部", {
+    font: font9,
+   　size: 15,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.8,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry9.center()
+
+  const textMaterial9 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text9 = new THREE.Mesh(textGeometry9, textMaterial9)
+  text9.castShadow = true
+  text9.position.x = 200
+  text9.position.y = 65
+  text9.position.z = 200
+  text9.rotation.y = -1.35
+  
+  
+  scene.add(text9)
+})
+        
+      const loader10 = new THREE.FontLoader()
+loader10.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font10) => {
+  console.log("font loaded")
+
+        const textGeometry10 = new THREE.TextGeometry("調整室", {
+    font: font10,
+   　size: 12,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.5,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry10.center()
+
+  const textMaterial10 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text10 = new THREE.Mesh(textGeometry10, textMaterial10)
+  text10.castShadow = true
+  text10.position.x = 87
+  text10.position.y = 56
+  text10.position.z = 170
+  text10.rotation.y = -1.35
+  
+  
+  scene.add(text10)
+})
+        
+        
+        const loader11 = new THREE.FontLoader()
+loader11.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font11) => {
+  console.log("font loaded")
+
+        const textGeometry11 = new THREE.TextGeometry("空調室", {
+    font: font11,
+   　size: 12,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.5,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry11.center()
+
+  const textMaterial11 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text11 = new THREE.Mesh(textGeometry11, textMaterial11)
+  text11.castShadow = true
+  text11.position.x = 112
+  text11.position.y = 56
+  text11.position.z = 290
+  text11.rotation.y = -1.35
+  
+  
+  scene.add(text11)
+})
+        
+        
+        
+        
+        const loader12 = new THREE.FontLoader()
+loader12.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font12) => {
+  console.log("font loaded")
+
+        const textGeometry12 = new THREE.TextGeometry("デジタル\nスタジオ上部", {
+    font: font12,
+   　size: 15,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.8,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry12.center()
+
+  const textMaterial12 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text12 = new THREE.Mesh(textGeometry12, textMaterial12)
+  text12.castShadow = true
+  text12.position.x = -10
+  text12.position.y = 40
+  text12.position.z = 250
+  text12.rotation.y = -1.35
+  
+  
+  scene.add(text12)
+})
+        
+        
+        const loader13 = new THREE.FontLoader()
+loader13.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) => {
+  console.log("font loaded")
+
+        const textGeometry13 = new THREE.TextGeometry("大演習室", {
+    font: font13,
+   　size: 15,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.6,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry13.center()
+
+  const textMaterial13 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text13 = new THREE.Mesh(textGeometry13, textMaterial13)
+  text13.castShadow = true
+  text13.position.x = -10
+  text13.position.y = 56
+  text13.position.z = -80
+  
+  
+  
+  scene.add(text13)
+})
+        
+         const loader14 = new THREE.FontLoader()
+loader14.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font14) => {
+  console.log("font loaded")
+
+        const textGeometry14 = new THREE.TextGeometry("ゼミ室 3", {
+    font: font14,
+   　size: 15,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.8,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry14.center()
+
+  const textMaterial14 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text14 = new THREE.Mesh(textGeometry14, textMaterial14)
+  text14.castShadow = true
+  text14.position.x = 35
+  text14.position.y = 70
+  text14.position.z = -160
+  
+  
+  
+  scene.add(text14)
+})
+        
+        
+        const loader15 = new THREE.FontLoader()
+loader15.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font15) => {
+  console.log("font loaded")
+
+        const textGeometry15 = new THREE.TextGeometry("映像事務", {
+    font: font15,
+   　size: 15,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.8,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry15.center()
+
+  const textMaterial15 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text15 = new THREE.Mesh(textGeometry15, textMaterial15)
+  text15.castShadow = true
+  text15.position.x = 35
+  text15.position.y = 85
+  text15.position.z = -220
+  
+  
+  
+  scene.add(text15)
+})
+        
+        
+const loader16 = new THREE.FontLoader()
+loader16.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font16) => {
+  console.log("font loaded")
+
+        const textGeometry16 = new THREE.TextGeometry("映像\nライブラリー", {
+    font: font16,
+   　size: 12,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.5,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry16.center()
+
+  const textMaterial16 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text16 = new THREE.Mesh(textGeometry16, textMaterial16)
+  text16.castShadow = true
+  text16.position.x = 170
+  text16.position.y = 70
+  text16.position.z = -220
+  
+  
+  
+  scene.add(text16)
+})
+        
+
+
+const loader17 = new THREE.FontLoader()
+loader17.load("https://raw.githubusercontent.com/EliasIkemoto/JSON_FONT/main/BIZ_UDPGothic_Regular.json", (font13) => {
+  console.log("font loaded")
+
+        const textGeometry17 = new THREE.TextGeometry("各教授室", {
+    font: font13,
+   　size: 15,
+    height: 3.3,
+    curveSegments: 12,
+    bevelEnabled: true,
+    bevelThickness: 0.04,
+    bevelSize: 0.6,
+    bevelOffset: 0,
+    bevelSegments: 5,
+         
+  })
+  textGeometry17.center()
+
+  const textMaterial17 = new THREE.MeshLambertMaterial({
+ color: 0xe0ffff })
+  const text17 = new THREE.Mesh(textGeometry17, textMaterial17)
+  text17.castShadow = true
+  text17.position.x = 170
+  text17.position.y = 56
+  text17.position.z = -80
+  
+  
+  
+  scene.add(text17)
+})
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        const point1 = new
+THREE.Mesh(new
+THREE.ConeGeometry(10, 25, 10),
+ new THREE.MeshLambertMaterial({
+ color: 0xdc143c }));
+         scene.add(point1);
+
+        point1.position.set(300, 60, 230)
+
+
+        const point2 = new
+THREE.Mesh(new
+THREE.ConeGeometry(10, -25, 10),
+ new THREE.MeshLambertMaterial({
+ color: 0x4169e1 }));
+         scene.add(point2);
+
+        point2.position.set(60, 60, 97)
+
+    
+       
+        const point1a = new
+THREE.Mesh(new
+THREE.SphereGeometry(4, 4, 4),
+ new THREE.MeshLambertMaterial({
+ color: 0xdc143c }));
+         scene.add(point1a);
+
+        point1a.position.set(300, 75, 230)
+       
+        const point2a = new
+THREE.Mesh(new
+THREE.SphereGeometry(4, 4, 4),
+ new THREE.MeshLambertMaterial({
+ color: 0x4169e1 }));
+         scene.add(point2a);
+
+         point2a.position.set(60, 75, 97)
+        
+        
+        
+        
+        
+        
+       const meshF1 = new THREE.Mesh(new THREE.BoxGeometry(1000, 1, 3000), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF1);
+        
+        meshF1.position.set(360, -40, 500) 
+   group.add(meshF1);
+        
+        const meshF2 = new THREE.Mesh(new THREE.BoxGeometry(160, 1, 1200), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF2);
+        
+        meshF2.position.set(-213.5, -40, -298) 
+   group.add(meshF2);
+        
+        const meshF3 = new THREE.Mesh(new THREE.BoxGeometry(300, 1, 300), new THREE.MeshLambertMaterial({ color: 0x808080 }));
+        scene.add(meshF3);
+        
+        meshF3.position.set(-288.8, -58.07, 451) 
+        
+        meshF3.rotation.z =- Math.PI / 1.04 ;
+        
+   group.add(meshF3);
+        
+        const meshF4 = new THREE.Mesh(new THREE.BoxGeometry(800, 1, 1200), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF4);
+        
+        meshF4.position.set(-530, -40, 1117) 
+   group.add(meshF4);
+        
+        const meshF3a = new THREE.Mesh(new THREE.BoxGeometry(575, 1, 300), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF3a);
+        
+                      meshF3a.position.set(-643, -40, 450) 
+        
+   group.add(meshF3a);
+        
+        const meshF3b = new THREE.Mesh(new THREE.BoxGeometry(8, 1, 30), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF3b);
+        
+                      meshF3b.position.set(650, -40, 120) 
+        
+          
+        const meshF5 = new THREE.Mesh(new THREE.BoxGeometry(300, 100, 1), new THREE.MeshLambertMaterial({ color: 0x808080 }));
+        scene.add(meshF5);
+        
+        meshF5.position.set(-144, -90, 301) 
+   group.add(meshF5);
+        
+       
+        const meshF6 = new THREE.Mesh(new THREE.BoxGeometry(300, 1, 600), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF6);
+        
+        meshF6.position.set(-444, -58.7, 460) 
+   group.add(meshF6);
+        
+        
+         const meshF1a = new THREE.Mesh(new THREE.BoxGeometry(830, 1, 1190), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF1a);
+        
+        meshF1a.position.set(-515, -40, -404) 
+   group.add(meshF1a);
+        
+        const meshF1b = new THREE.Mesh(new THREE.BoxGeometry(574, 1, 150), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF1b);
+        
+        meshF1b.position.set(-643, -40, 250) 
+   group.add(meshF1b);
+      
+        const meshF1c = new THREE.Mesh(new THREE.BoxGeometry(23, 1, 60), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF1c);
+        
+        meshF1c.position.set(-348, -40, 220) 
+   group.add(meshF1c);
+        
+        
+        const meshF1d = new THREE.Mesh(new THREE.BoxGeometry(23, 1, 60), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF1d);
+        
+        meshF1d.position.set(653, -40, 156) 
+   
+        const meshF7 = new THREE.Mesh(new THREE.BoxGeometry(800, 1, 300), new THREE.MeshLambertMaterial({ color: 0xa9a9a9 }));
+        scene.add(meshF7);
+        
+        meshF7.position.set(-531, -40, 1850) 
+        
+        group.add(meshF7);
+        
+        
+        
+        
+        
+        
+        
+        
+     const ligh = new THREE.DirectionalLight(0xFFFFFF, 0.37);
+        ligh.position.set(-10, 20, 1.5)
+scene.add(ligh);
+        
+       const light = new THREE.DirectionalLight(0xFFFFFF, 0.37);
+        light.position.set(10, 20, 1.5)
+scene.add(light);
+        
+        const light1 = new THREE.AmbientLight(0xFFFFFF, 0.4);
+scene.add(light1);
+        
+        
+        
+        
+        
+        tick();
+
+        
+        function tick() {
+          
+
+         const renderer = new THREE.WebGLRenderer({
+    canvas: canvas
+})
+renderer.setSize(sizes.width, sizes.height)
+renderer.setPixelRatio(10)
+          
+          renderer.render(scene, camera);
+          requestAnimationFrame(tick);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas>
+  </body>
+</html>
